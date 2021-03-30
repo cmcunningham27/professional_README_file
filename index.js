@@ -34,6 +34,11 @@ const questions = [
     },
     {
         type: "input",
+        message: "What is the link to your deployed project?",
+        name: "deployed",
+    },
+    {
+        type: "input",
         message: "What are the installation instruction for your project?",
         name: "installation",
         
@@ -55,18 +60,38 @@ const questions = [
         choices: ["Apache License 2.0", "GNY General Public License v3.0", "MIT License", "BSD 2-Clause 'Simplified' License", "BSD 3-Clause 'New' or 'Revised' License", "Boost Software License 1.0", "Creative Commons Zero v1.0 Universal", "Eclipse Public License 2.0", "GNU Affero General Public License v3.0", "GNU General Public License v2.0", "GNU Lesser General Public License v2.1", "Mozilla Public License v2.0", "The Unlicense"],
     },
     {
-        type: ,
-        message: ,
-        name: ,
+        type: "input",
+        message: "What complications did you face during the creation of this project?",
+        name: "complications",
     },
     {
-        type: ,
-        message: ,
-        name: ,
+        type: "input",
+        message: "What features do you plan to implement in the future?",
+        name: "features",
     },
     {
-        type: ,
-        message: ,
-        name: ,
-    }
-]
+        type: "input",
+        message: "What are your guidelines for contributing to your project?",
+        name: "contribute",
+    },
+    {
+        type: "input",
+        message: "What are the test instructions for your project?",
+        name: "tests",
+    },
+    {
+        type: "input",
+        message: "What is the link to your GitHub profile?",
+        name: "github",
+    },
+    {
+        type: "input",
+        message: "What is your email address?",
+        name: "email",
+    },
+    {
+        type: "input",
+        message: "What are the instructions for reaching you with additional questions?",
+        name: "reachingOut",
+    },
+];
