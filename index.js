@@ -95,3 +95,83 @@ const questions = [
         name: "reachingOut",
     },
 ];
+
+console.log(questions);
+
+inquirer    
+    .prompt(questions)
+    .then((response) => {
+        fs.writeFile('README.md', 
+            `
+                # ${response.title}
+                ## Descriptions
+                ---
+                ${response.motivation}
+                &nbsp;
+                ${response.why}
+                &nbsp;
+                ${responsive.solve}
+                &nbsp;
+                ${response.learn}
+                &nbsp;
+                ${repsonse.standout}
+                &nbsp;
+                ## Deployed Link
+                ---
+                [Deployed Application URL](${response.deployed})
+                &nbsp;
+                ## Table of Contents
+                ---
+                - [Installation](#installation)
+                - [Usage](#usage)
+                - [License](#license)
+                - [Badges](#badges)
+                - [Complications](#complications)
+                - [Features](#features)
+                - [Contribute](#contribute)
+                - [Tests](#tests)
+                - [Questions](#questions)
+                &nbsp;
+                ## Installation
+                ---
+                ${response.installation}
+                &nbsp;
+                ## Usage
+                ---
+                ${response.usage}
+                &nbsp;
+                ![screenshot](${response.screenshot})
+                &nbsp;
+                ## License
+                ---
+
+                &nbsp;
+                ## Badges
+                ---
+
+                &nbsp;
+                ## Complications
+                ---
+                ${response.complications}
+                &nbsp;
+                ## Features
+                ---
+                ${response.features}
+                &nbsp;
+                ## Contribute
+                ---
+                ${response.contribute}
+                &nbsp;
+                ## Tests
+                ---
+                ${response.tests}
+                &nbsp;
+                ## Questions
+                ---
+                [GitHub Profile](${response.github})
+                [E-mail](${response.email})
+                &nbsp;
+                ${response.reachingOut}
+            `, (error) =>
+                error ? console.log(error) : console.log("Successfully created your README.md!"))
+    })
