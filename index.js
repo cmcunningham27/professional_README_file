@@ -58,7 +58,7 @@ const questions = [
         type: "list",
         message: "What license do you choose for your project?",
         name: "license",
-        choices: ["Apache License 2.0", "GNY General Public License v3.0", "MIT License", "BSD 2-Clause 'Simplified' License", "BSD 3-Clause 'New' or 'Revised' License", "Boost Software License 1.0", "Creative Commons Zero v1.0 Universal", "Eclipse Public License 2.0", "GNU Affero General Public License v3.0", "GNU General Public License v2.0", "GNU Lesser General Public License v2.1", "Mozilla Public License v2.0", "The Unlicense"],
+        choices: ["Apache License 2.0", "GNU General Public License v3.0", "MIT License", "BSD 2-Clause 'Simplified' License", "BSD 3-Clause 'New' or 'Revised' License", "Boost Software License 1.0", "Creative Commons Zero v1.0 Universal", "Eclipse Public License 2.0", "GNU Affero General Public License v3.0", "GNU General Public License v2.0", "GNU Lesser General Public License v2.1", "Mozilla Public License v2.0", "The Unlicense"],
     },
     {
         type: "input",
@@ -111,16 +111,17 @@ function init() {
 # ${response.title}
 ---
 ## Descriptions
+---
 ${response.motivation}\
 ${response.why}\
 ${response.solve}\
 ${response.learn}\
 ${response.standout}
----
 ## Deployed Link
-[Deployed Application URL](${response.deployed})
 ---
+[Deployed Application URL](${response.deployed})
 ## Table of Contents
+---
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -130,31 +131,34 @@ ${response.standout}
 - [Contribute](#contribute)
 - [Tests](#tests)
 - [Questions](#questions)
----
 ## Installation
-${response.installation}
 ---
+${response.installation}
 ## Usage
+---
 ${response.usage}\
 ![screenshot](${response.screenshot})
----
+
 ## License
 ---
+
 ## Badges
 ---
+
 ## Complications
+---
 ${response.complications}
----
 ## Features
+---
 ${response.features}
----
 ## Contribute
+---
 ${response.contribute}
----
 ## Tests
-${response.tests}
 ---
+${response.tests}
 ## Questions
+---
 [GitHub Profile](${response.github})\
 [E-mail](${response.email})
 
