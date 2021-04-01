@@ -1,6 +1,7 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 
+
 const questions = [
     {
         type: "input",
@@ -96,13 +97,17 @@ const questions = [
     },
 ];
 
+
 console.log(questions);
 
-inquirer    
-    .prompt(questions)
-    .then((response) => {
-        fs.writeFile('README.md', 
-            `
+
+
+function init() {
+    inquirer    
+        .prompt(questions)
+        .then((response) => {
+            fs.writeFile('./README/README.md', 
+                `
                 # ${response.title}
                 ## Descriptions
                 ---
@@ -110,11 +115,11 @@ inquirer
                 &nbsp;
                 ${response.why}
                 &nbsp;
-                ${responsive.solve}
+                ${response.solve}
                 &nbsp;
                 ${response.learn}
                 &nbsp;
-                ${repsonse.standout}
+                ${response.standout}
                 &nbsp;
                 ## Deployed Link
                 ---
@@ -144,11 +149,9 @@ inquirer
                 &nbsp;
                 ## License
                 ---
-
                 &nbsp;
                 ## Badges
                 ---
-
                 &nbsp;
                 ## Complications
                 ---
@@ -172,6 +175,9 @@ inquirer
                 [E-mail](${response.email})
                 &nbsp;
                 ${response.reachingOut}
-            `, (error) =>
-                error ? console.log(error) : console.log("Successfully created your README.md!"))
-    })
+                `, (error) =>
+                    error ? console.log(error) : console.log("Successfully created your README.md!"))
+        })
+    }
+
+    init();
