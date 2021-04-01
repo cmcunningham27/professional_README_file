@@ -2,20 +2,14 @@
 # jksdfjsd
 ## Descriptions
 ---
-sdsdkjbsd
-&nbsp;
-dfsurf
-&nbsp;
-sdvfvukdf
-&nbsp;
-vhbjluiasdvba
-&nbsp;
-jhsdvus
-&nbsp;
+sdsdkjbsd\
+dfsurf\
+sdvfvukdf\
+vhbjluiasdvba\
+jhsdvus\
 ## Deployed Link
 ---
-[Deployed Application URL](https://github.com/cmcunningham27/professional_README_file)
-&nbsp;
+[Deployed Application URL](https://github.com/cmcunningham27/professional_README_file)\
 ## Table of Contents
 ---
 - [Installation](#installation)
@@ -26,44 +20,37 @@ jhsdvus
 - [Features](#features)
 - [Contribute](#contribute)
 - [Tests](#tests)
-- [Questions](#questions)
-&nbsp;
+- [Questions](#questions)\
+
 ## Installation
 ---
-jsdbjlk
-&nbsp;
+jsdbjlk\
 ## Usage
 ---
-sdkjvbskjd
-&nbsp;
-![screenshot](k;jsbdgjk)
-&nbsp;
+sdkjvbskjd\
+![screenshot](k;jsbdgjk)\
 ## License
 ---
-&nbsp;
+\
 ## Badges
 ---
-&nbsp;
+\
 ## Complications
 ---
-kjsdjkas
-&nbsp;
+kjsdjkas\
 ## Features
 ---
-sd;kjbdsg
-&nbsp;
+sd;kjbdsg\
 ## Contribute
 ---
-jhsdlkjbsd
-&nbsp;
+jhsdlkjbsd\
 ## Tests
 ---
-khsdjkbsd
-&nbsp;
+khsdjkbsd\
 ## Questions
 ---
-[GitHub Profile](https://github.com/cmcunningham27)
-[E-mail](sttepstutoring@yahoo.com)
-&nbsp;
+[GitHub Profile](https://github.com/cmcunningham27)\
+[E-mail](sttepstutoring@yahoo.com)\
+
 jksbdgujbsgd
                 
