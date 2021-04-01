@@ -109,24 +109,18 @@ function init() {
             fs.writeFile('./README/README.md', 
 `
 # ${response.title}
+---
 ## Descriptions
----
-${response.motivation}
-&nbsp;
-${response.why}
-&nbsp;
-${response.solve}
-&nbsp;
-${response.learn}
-&nbsp;
+${response.motivation}\
+${response.why}\
+${response.solve}\
+${response.learn}\
 ${response.standout}
-&nbsp;
+---
 ## Deployed Link
----
 [Deployed Application URL](${response.deployed})
-&nbsp;
-## Table of Contents
 ---
+## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -136,44 +130,34 @@ ${response.standout}
 - [Contribute](#contribute)
 - [Tests](#tests)
 - [Questions](#questions)
-&nbsp;
+---
 ## Installation
----
 ${response.installation}
-&nbsp;
-## Usage
 ---
-${response.usage}
-&nbsp;
+## Usage
+${response.usage}\
 ![screenshot](${response.screenshot})
-&nbsp;
+---
 ## License
 ---
-&nbsp;
 ## Badges
 ---
-&nbsp;
 ## Complications
----
 ${response.complications}
-&nbsp;
+---
 ## Features
----
 ${response.features}
-&nbsp;
+---
 ## Contribute
----
 ${response.contribute}
-&nbsp;
+---
 ## Tests
----
 ${response.tests}
-&nbsp;
-## Questions
 ---
-[GitHub Profile](${response.github})
+## Questions
+[GitHub Profile](${response.github})\
 [E-mail](${response.email})
-&nbsp;
+
 ${response.reachingOut}
                 `, (error) =>
                     error ? console.log(error) : console.log("Successfully created your README.md!"))
