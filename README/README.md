@@ -6,7 +6,7 @@ sdsdkjbsd\
 dfsurf\
 sdvfvukdf\
 vhbjluiasdvba\
-jhsdvus\
+jhsdvus
 ## Deployed Link
 ---
 [Deployed Application URL](https://github.com/cmcunningham27/professional_README_file)\
@@ -20,37 +20,37 @@ jhsdvus\
 - [Features](#features)
 - [Contribute](#contribute)
 - [Tests](#tests)
-- [Questions](#questions)\
+- [Questions](#questions)
 
 ## Installation
 ---
-jsdbjlk\
+jsdbjlk
 ## Usage
 ---
 sdkjvbskjd\
-![screenshot](k;jsbdgjk)\
+![screenshot](k;jsbdgjk)
 ## License
 ---
-\
+
 ## Badges
 ---
-\
+
 ## Complications
 ---
-kjsdjkas\
+kjsdjkas
 ## Features
 ---
-sd;kjbdsg\
+sd;kjbdsg
 ## Contribute
 ---
-jhsdlkjbsd\
+jhsdlkjbsd
 ## Tests
 ---
-khsdjkbsd\
+khsdjkbsd
 ## Questions
 ---
 [GitHub Profile](https://github.com/cmcunningham27)\
-[E-mail](sttepstutoring@yahoo.com)\
+[E-mail](sttepstutoring@yahoo.com)
 
 jksbdgujbsgd
                 
