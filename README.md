@@ -21,7 +21,9 @@ When installing this project, the user must: 1. Clone the repository in GitBash,
 ## Usage
 ---
 [Video 1 of How to Use Project](https://drive.google.com/file/d/1egGQiflwjFYZTpb5AumUFSahtIgQDILK/view)
+
 [Continued Video of How to Use Project](https://drive.google.com/file/d/1qP9J2r5GhcB5Wtri3mBVthLhZk1vkUHN/view)
+
 [Final Video of How to Use Project](https://drive.google.com/file/d/1HAzXIN0K3T3r1jqFh9S23ujUXzPIaJOJ/view)
 
 ## License
