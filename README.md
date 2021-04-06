@@ -43,6 +43,8 @@ I ran into complications when I realized that the template literal for the READM
 
 ## Questions
 ---
-[GitHub Profile](https://github.com/cmcunningham27)[E-mail](sttepstutoring@yahoo.com)
+[GitHub Profile](https://github.com/cmcunningham27)
+
+[E-mail](sttepstutoring@yahoo.com)
 
 Please do not hesitate to contact me with any questions or concerns you may have at the e-mail provided.

@@ -1,8 +1,10 @@
+
+//pulls the use of the file system, inquirer, and the generateMarkdown file.
 const fs = require("fs");
 const inquirer = require("inquirer");
 const MarkdownGenerator = require("./generateMarkdown");
 
-
+//Array of questions declared and given value.
 const questions = [
     {
         type: "input",
@@ -98,6 +100,7 @@ const questions = [
     },
 ];
 
+//initializes the steps to create the README file by prompting the questions to the used in the terminal, creates a READMEgereated.md, takes their responses by exporting them to the generateMarkdown file to be implemented in the template literal with the README syntax, and finally renders the template literal onto the new README file.
 function init() {
     inquirer    
         .prompt(questions)
@@ -116,4 +119,5 @@ function init() {
         })
 }
 
-    init();
+//Calls the init function run the functioning of the program.
+init();
