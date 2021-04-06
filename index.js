@@ -100,13 +100,12 @@ const questions = [
     },
 ];
 
-//initializes the steps to create the README file by prompting the questions to the used in the terminal, creates a READMEgereated.md, takes their responses by exporting them to the generateMarkdown file to be implemented in the template literal with the README syntax, and finally renders the template literal onto the new README file.
+//initializes the steps to create the README file by prompting the questions to the used in the terminal, creates a READMEgereated.md, takes their responses by exporting them to the generateMarkdown file to be implemented in the template literal with the README syntax, and finally writes the data onto the new README file.
 function init() {
     inquirer    
         .prompt(questions)
         .then((response) => {
             const data = MarkdownGenerator(response);
-            console.log(data);
             fs.writeFile('./READMEgenerated.md', data, (error) => 
                     error ? console.log(error) : console.log("Successfully created your README.md!"))
         })
@@ -119,5 +118,5 @@ function init() {
         })
 }
 
-//Calls the init function run the functioning of the program.
+//Calls the init function to run the functioning of the program.
 init();
