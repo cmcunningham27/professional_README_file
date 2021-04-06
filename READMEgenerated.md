@@ -4,7 +4,7 @@
 ---
 ## Descriptions
 ---
-To allow users to search for a city and get the current and 5-day future forecast.For weather enthusiasts.If you don't know what the weather is, then you can search for a city and see what the current weather is, in case you plan to go for a hike for the afternoon.I learned how to create a website utilizing Bootstrap Grid
+To allow users to search for a city and get the current and 5-day future forecast.For weather enthusiasts.If you don't know what the weather is, then you can search for a city and see what the current weather is, in case you plan to go for a hike for the afternoon.I learned how to create a website utilizing Bootstrap Grid.
 ## Deployed Link
 ---
 [Deployed Application URL](https://cmcunningham27.github.io/weather-dashboard)
@@ -45,6 +45,6 @@ This project is licensed under the MIT license.
 ---
 [GitHub Profile](https://github.com/cmcunningham27)
 
-[E-mail](sttepstutoring@yahoo.com)
+E-mail: sttepstutoring@yahoo.com
 
 E-mailing me is the best option

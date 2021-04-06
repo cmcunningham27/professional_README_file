@@ -75,7 +75,7 @@ ${data.tests}
 ---
 [GitHub Profile](${data.github})
 
-[E-mail](${data.email})
+E-mail: ${data.email}
 
 ${data.reachingOut}
 `;
