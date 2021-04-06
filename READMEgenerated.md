@@ -1,6 +1,6 @@
 
 # Weather Dashboard
-[![License: MIT](https://img.shields.io/badge/License-MIT-Red.svg)]
+![License: MIT](https://img.shields.io/badge/License-MIT-Red.svg)
 ---
 ## Descriptions
 ---

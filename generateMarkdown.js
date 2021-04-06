@@ -2,7 +2,7 @@
 //function used to return the badge for the license the user chose for their project or returns empty string
 function renderLicenseBadge(license) {
     if (license) {
-        return `[![License: ${license}](https://img.shields.io/badge/License-${license}-Red.svg)]`;
+        return `![License: ${license}](https://img.shields.io/badge/License-${license}-Red.svg)`;
     } else {
         return "";
     }
