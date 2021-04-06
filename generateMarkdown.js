@@ -1,91 +1,80 @@
+
 function renderLicenseBadge(license) {
-    if (license === "Apache 2.0 License") {
-        return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
-    } 
-    if (license = "GNU General Public License v3.0") {
-        return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
-    }
-    if (license === "MIT License") {
-        return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-    }
-    if (license === "BSD 2-Clause 'Simplified' License") {
-        return "[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)";
-    }
-    if (license === "BSD 3-Clause 'New' or 'Revised' License") {
-        return "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
-    }
-    if (license === "Boost Software License 1.0") {
-        return "[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)";
-    }
-    if (license === "Creative Commons Zero v1.0 Universal") {
-        return "[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)";
-    }
-    if (license === "Eclipse Public License 2.0") {
-        return "[![License](https://img.shields.io/badge/License-EPL%202.0-red.svg)](https://opensource.org/licenses/EPL-2.0)";
-    }
-    if (license === "GNU Affero General Public License v3.0") {
-        return "[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)";
-    }
-    if (license === "GNU General Public License v2.0") {
-        return "[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)";
-    }
-    if (license === "GNU Lesser General Public License v2.1") {
-        return "[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v2.1-blue.svg)](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)";
-    }
-    if (license === "Mozilla Public License v2.0") {
-        return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
-    }
-    if (license === "The Unlicense") {
-        return "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
-    }
-    if (!license) {
+    if (license) {
+        return `[![License: ${license}](https://img.shields.io/badge/License-${license}-Red.svg)]`;
+    } else {
         return "";
     }
 };
 
 function renderLicenseLink(license) {
-    if (license === "Apache 2.0 License") {
-        return "[Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0)";
-    } 
-    if (license = "GNU General Public License v3.0") {
-        return "[GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0)";
+    return license ? '- [License](#license)' : "";
+    
+};
+
+function renderLicenseSection(license) {
+    if (license) {
+        return `
+## License
+---
+This project is licensed under the ${license} license.
+`;
     }
-    if (license === "MIT License") {
-        return "[MIT License](https://mit-license.org/)";
-    }
-    if (license === "BSD 2-Clause 'Simplified' License") {
-        return "[BSD 2-Clause 'Simplified' License](https://opensource.org/licenses/BSD-2-Clause)";
-    }
-    if (license === "BSD 3-Clause 'New' or 'Revised' License") {
-        return "[BSD 3-Clause 'New' or 'Revised' License](https://opensource.org/licenses/BSD-3-Clause)"
-    }
-    if (license === "Boost Software License 1.0") {
-        return "[Boost Software License 1.0](https://www.boost.org/LICENSE_1_0.txt)";
-    }
-    if (license === "Creative Commons Zero v1.0 Universal") {
-        return "[Creative Commons Zero v1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/)";
-    }
-    if (license === "Eclipse Public License 2.0") {
-        return "[Eclipse Public License 2.0](https://www.eclipse.org/legal/epl-2.0/)";
-    }
-    if (license === "GNU Affero General Public License v3.0") {
-        return "[GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0)";
-    }
-    if (license === "GNU General Public License v2.0") {
-        return "[GNU General Public License v2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)";
-    }
-    if (license === "GNU Lesser General Public License v2.1") {
-        return "[GNU Lesser General Public License v2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html)";
-    }
-    if (license === "Mozilla Public License v2.0") {
-        return "[Mozilla Public License v2.0](https://www.mozilla.org/en-US/MPL/2.0/)";
-    }
-    if (license === "The Unlicense") {
-        return "[The Unlicense](http://unlicense.org/)";
-    }
-    if (!license) {
-        return "";
-    }
-}
+    return "";
+};
+
+function generateMarkdown(data) {
+    return`
+# ${data.title}
+${renderLicenseBadge(data.license)}
+---
+## Descriptions
+---
+${data.motivation}\
+${data.why}\
+${data.solve}\
+${data.learn}\
+${data.standout}
+## Deployed Link
+---
+[Deployed Application URL](${data.deployed})
+## Table of Contents
+---
+- [Installation](#installation)
+- [Usage](#usage)
+${renderLicenseLink(data.license)}
+- [Complications](#complications)
+- [Features](#features)
+- [Contribute](#contribute)
+- [Tests](#tests)
+- [Questions](#questions)
+## Installation
+---
+${data.installation}
+## Usage
+---
+${data.usage}\
+![screenshot](${data.screenshot})
+${renderLicenseSection(data.license)}
+## Complications
+---
+${data.complications}
+## Features
+---
+${data.features}
+## Contribute
+---
+${data.contribute}
+## Tests
+---
+${data.tests}
+## Questions
+---
+[GitHub Profile](${data.github})\
+[E-mail](${data.email})
+
+${data.reachingOut}
+`;
+};
 
 module.exports = generateMarkdown;

@@ -1,5 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+const MarkdownGenerator = require("./generateMarkdown");
 
 
 const questions = [
@@ -97,75 +98,22 @@ const questions = [
     },
 ];
 
-
-console.log(questions);
-
-
-
 function init() {
     inquirer    
         .prompt(questions)
         .then((response) => {
-            fs.writeFile('./README/README.md', 
-`
-# ${response.title}
----
-## Descriptions
----
-${response.motivation}\
-${response.why}\
-${response.solve}\
-${response.learn}\
-${response.standout}
-## Deployed Link
----
-[Deployed Application URL](${response.deployed})
-## Table of Contents
----
-- [Installation](#installation)
-- [Usage](#usage)
-- [License](#license)
-- [Badges](#badges)
-- [Complications](#complications)
-- [Features](#features)
-- [Contribute](#contribute)
-- [Tests](#tests)
-- [Questions](#questions)
-## Installation
----
-${response.installation}
-## Usage
----
-${response.usage}\
-![screenshot](${response.screenshot})
-
-## License
----
-
-## Badges
----
-
-## Complications
----
-${response.complications}
-## Features
----
-${response.features}
-## Contribute
----
-${response.contribute}
-## Tests
----
-${response.tests}
-## Questions
----
-[GitHub Profile](${response.github})\
-[E-mail](${response.email})
-
-${response.reachingOut}
-                `, (error) =>
+            const data = MarkdownGenerator(response);
+            console.log(data);
+            fs.writeFile('./README.md', data, (error) => 
                     error ? console.log(error) : console.log("Successfully created your README.md!"))
         })
-    }
+        .catch(error => {
+            if (error) {
+                console.log("Couldn't render")
+            } else {
+                console.log("something else went wrong")
+            }
+        })
+}
 
     init();
