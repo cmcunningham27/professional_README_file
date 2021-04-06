@@ -17,7 +17,15 @@ My motivation for this project was to create an app that asks the User questions
 - [Questions](#questions)
 ## Installation
 ---
-When installing this project, the user must: 1. Clone the repository in GitBash, using "git clone [link]". 2. Type "code ." into GitBash. 3. Once it is open in VS Code, run "npm i" in termial to install npm. 4. Then type npm index.js in the terminal. This will prompt you with questions. 5. Answer all of the questions accordingly. Once they have all been answered you will have created a new file called READMgenerated.md. 6. Save all your changes in the corresponding files. 7. Push your changes in GitBash to see the layout of your new READMEgenerated.md file.
+When installing this project, the user must: 
+
+1. Clone the repository in GitBash, using "git clone [link]". 
+2. Type "code ." into GitBash. 
+3. Once it is open in VS Code, run "npm i" in termial to install npm. 
+4. Then type npm index.js in the terminal. This will prompt you with questions. 
+5. Answer all of the questions accordingly. Once they have all been answered you will have created a new file called READMgenerated.md. 
+6. Save all your changes in the corresponding files. 
+7. Push your changes in GitBash to see the layout of your new READMEgenerated.md file.
 ## Usage
 ---
 [Video 1 of How to Use Project](https://drive.google.com/file/d/1egGQiflwjFYZTpb5AumUFSahtIgQDILK/view)
@@ -26,15 +34,17 @@ When installing this project, the user must: 1. Clone the repository in GitBash,
 
 [Final Video of How to Use Project](https://drive.google.com/file/d/1HAzXIN0K3T3r1jqFh9S23ujUXzPIaJOJ/view)
 
+[How it looks in the repository](https://drive.google.com/file/d/15MNB43OJjmoiejwP5sDXtYs2iM_qMBPm/view)
+
 ## License
 ---
 This project is licensed under the MIT License license.
-
 ## Complications
 ---
 I ran into complications when I realized that the template literal for the README file's content needed to be in a separate Javascript file. I was not sure how to export it in order for it to be used in the index Javascript. Once I found the appropriate methods to use, I found that some of the collected data was coming back undefined. That just needed a simple fix by adding a return to two of the functions in the generateMarkdown Javascript file.
 ## Features
 ---
+To have one video for the whole rundown of the functionality and usage of the project.
 ## Questions
 ---
 [GitHub Profile](https://github.com/cmcunningham27)
