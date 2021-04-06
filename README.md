@@ -1,6 +1,6 @@
 
 # Professional README File Creator
-[![License: MIT License](https://img.shields.io/badge/License-MIT License-Red.svg)]
+![License: MIT License](https://img.shields.io/badge/License-MIT License-Red.svg)
 ---
 ## Descriptions
 ---

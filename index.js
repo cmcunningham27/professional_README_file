@@ -104,7 +104,7 @@ function init() {
         .then((response) => {
             const data = MarkdownGenerator(response);
             console.log(data);
-            fs.writeFile('./README.md', data, (error) => 
+            fs.writeFile('./READMEgenerated.md', data, (error) => 
                     error ? console.log(error) : console.log("Successfully created your README.md!"))
         })
         .catch(error => {
