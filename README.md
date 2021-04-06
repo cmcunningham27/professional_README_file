@@ -20,9 +20,9 @@ My motivation for this project was to create an app that asks the User questions
 When installing this project, the user must: 1. Clone the repository in GitBash, using "git clone [link]". 2. Type "code ." into GitBash. 3. Once it is open in VS Code, run "npm i" in termial to install npm. 4. Then type npm index.js in the terminal. This will prompt you with questions. 5. Answer all of the questions accordingly. Once they have all been answered you will have created a new file called READMgenerated.md. 6. Save all your changes in the corresponding files. 7. Push your changes in GitBash to see the layout of your new READMEgenerated.md file.
 ## Usage
 ---
-![Video 1 of How to Use Project](https://drive.google.com/file/d/1egGQiflwjFYZTpb5AumUFSahtIgQDILK/view)
-![Continued Video of How to Use Project](https://drive.google.com/file/d/1qP9J2r5GhcB5Wtri3mBVthLhZk1vkUHN/view)
-![Final Video of How to Use Project](https://drive.google.com/file/d/1HAzXIN0K3T3r1jqFh9S23ujUXzPIaJOJ/view)
+[Video 1 of How to Use Project](https://drive.google.com/file/d/1egGQiflwjFYZTpb5AumUFSahtIgQDILK/view)
+[Continued Video of How to Use Project](https://drive.google.com/file/d/1qP9J2r5GhcB5Wtri3mBVthLhZk1vkUHN/view)
+[Final Video of How to Use Project](https://drive.google.com/file/d/1HAzXIN0K3T3r1jqFh9S23ujUXzPIaJOJ/view)
 
 ## License
 ---
